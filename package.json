@@ -2,6 +2,7 @@
   "name": "Evolvtech-Ecosystem",
   "private": true,
   "scripts": {
+    "dev:all": "turbo run dev --parallel",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
