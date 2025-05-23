@@ -26,18 +26,99 @@ Evolvtech is a technology company that builds sophisticated computer software an
 
 ```bash
 /
-├─ apps/
-│  ├─ dashboard/      # Next.js frontend shell
-│  ├─ auth-service/   # NestJS microservice
-│  └─ …               # other modules
-├─ packages/
-│  ├─ ui/             # shared components
-│  ├─ db/             # Prisma schema & migrations
-│  └─ config/         # env typing & constants
-├─ infra/             # Terraform configs
-├─ .github/           # CI workflows & issue templates
-├─ .eslintrc.js
-├─ .prettierrc
-├─ commitlint.config.js
-├─ turbo.json
-└─ README.md
+.
+├── apps
+│   ├── auth-service
+│   │   ├── eslint.config.mjs
+│   │   ├── nest-cli.json
+│   │   ├── package.json
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app.controller.spec.ts
+│   │   │   ├── app.controller.ts
+│   │   │   ├── app.module.ts
+│   │   │   ├── app.service.ts
+│   │   │   └── main.ts
+│   │   ├── test
+│   │   │   ├── app.e2e-spec.ts
+│   │   │   └── jest-e2e.json
+│   │   ├── tsconfig.build.json
+│   │   └── tsconfig.json
+│   ├── dashboard
+│   │   ├── app
+│   │   │   ├── favicon.ico
+│   │   │   ├── fonts
+│   │   │   │   ├── GeistMonoVF.woff
+│   │   │   │   └── GeistVF.woff
+│   │   │   ├── globals.css
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.module.css
+│   │   │   └── page.tsx
+│   │   ├── eslint.config.js
+│   │   ├── next-env.d.ts
+│   │   ├── next.config.js
+│   │   ├── package.json
+│   │   ├── public
+│   │   │   ├── file-text.svg
+│   │   │   ├── globe.svg
+│   │   │   ├── next.svg
+│   │   │   ├── turborepo-dark.svg
+│   │   │   ├── turborepo-light.svg
+│   │   │   ├── vercel.svg
+│   │   │   └── window.svg
+│   │   ├── README.md
+│   │   └── tsconfig.json
+│   └── docs
+│       ├── app
+│       │   ├── favicon.ico
+│       │   ├── fonts
+│       │   │   ├── GeistMonoVF.woff
+│       │   │   └── GeistVF.woff
+│       │   ├── globals.css
+│       │   ├── layout.tsx
+│       │   ├── page.module.css
+│       │   └── page.tsx
+│       ├── eslint.config.js
+│       ├── next-env.d.ts
+│       ├── next.config.js
+│       ├── package.json
+│       ├── public
+│       │   ├── file-text.svg
+│       │   ├── globe.svg
+│       │   ├── next.svg
+│       │   ├── turborepo-dark.svg
+│       │   ├── turborepo-light.svg
+│       │   ├── vercel.svg
+│       │   └── window.svg
+│       ├── README.md
+│       └── tsconfig.json
+├── LICENSE
+├── package-lock.json
+├── package.json
+├── packages
+│   ├── eslint-config
+│   │   ├── base.js
+│   │   ├── next.js
+│   │   ├── package.json
+│   │   ├── react-internal.js
+│   │   └── README.md
+│   ├── typescript-config
+│   │   ├── base.json
+│   │   ├── nextjs.json
+│   │   ├── package.json
+│   │   └── react-library.json
+│   └── ui
+│       ├── eslint.config.mjs
+│       ├── package.json
+│       ├── src
+│       │   ├── button.tsx
+│       │   ├── card.tsx
+│       │   └── code.tsx
+│       ├── tsconfig.json
+│       └── turbo
+│           └── generators
+│               ├── config.ts
+│               └── templates
+│                   └── component.hbs
+├── README.md
+└── turbo.json
